@@ -1,0 +1,1 @@
+# ISQA-3900-assigment2-django-pythonanywhere-prangya
