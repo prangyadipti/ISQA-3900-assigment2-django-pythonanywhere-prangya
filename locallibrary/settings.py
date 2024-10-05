@@ -143,7 +143,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'chyprangya@gmail.com'
-EMAIL_HOST_PASSWORD = 'cock jhwd szzp jztd'
+EMAIL_HOST_PASSWORD = 'vlax crkp goqh awxk'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 SERVER_EMAIL = 'chyprangya@gmail.com'
