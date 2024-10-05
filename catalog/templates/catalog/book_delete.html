@@ -1,0 +1,16 @@
+{% extends "catalog/base.html" %}
+
+{% block content %}
+    {% if perms.catalog.delete_book %}
+        <h1>Delete Book: {{ book.title }}</h1>
+        <form method="post">  <!-- Changed to lowercase 'post' -->
+            {% csrf_token %}
+            <input type="submit" class="btn btn-danger" value="Delete">
+            <!-- Adjusted the cancel link to point to book_list or book_detail -->
+            <a href="{% url 'book_list' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    {% else %}
+        <p>You do not have permission to access this feature</p>
+        <a href="{% url 'index' %}" class="btn btn-primary">Home</a>
+    {% endif %}
+{% endblock %}
